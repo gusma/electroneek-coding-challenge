@@ -1,3 +1,11 @@
+# ElectroNeek's coding challenge 🚀
+
+### Done by [Gustavo Malamud](http://www.gustavomalamud.com).
+
+# To run:
+
+```npm run install``` and then ```npm run dev```. Thank you!
+
 # Instructions
 
 Below you fill find several test tasks of various difficulty. The common conditions for all of them are: 
