@@ -3,7 +3,7 @@ import Footer from '../footer'
 
 const Layout = ({ children }) => {
   return (
-    <div className="container mx-auto bg-blue-500">
+    <div className="scroll overflow-x-hidden bg-blue-900 bgimage">
       <Header />
       {children}
       <Footer />

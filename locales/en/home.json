@@ -2,5 +2,12 @@
   "page.home.head.title": "Electroneek",
   "page.home.head.meta.description": "Electroneek",
   "page.home.title": "This is the backbone to the application",
-  "page.home.description": "This is the description"
+  "page.home.description": "This is the description",
+  "page.home.card1.title": "Start and grow your RPA service business",
+  "page.home.card1.description": "with ElectroNeek",
+  "page.home.card2.title": "Learn our partners",
+  "page.home.card2.description": "success stories",
+  "page.home.card3.title": "Meet our",
+  "page.home.card3.description": "partners",
+  "page.home.callToAction": "Learn our success stories"
 }

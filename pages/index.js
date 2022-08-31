@@ -1,18 +1,18 @@
 import Head from 'next/head'
 import { useRouter } from 'next/router'
-import { FormattedMessage, useIntl } from 'react-intl'
 import Layout from '../components/Layout'
+import Body from '../components/Body'
+
 import styles from '../styles/Home.module.css'
 
 export default function Home({ dir, yoast_head_json }) {
-  const intl = useIntl()
+  const { locale } = useRouter()
 
+  const titleOG = yoast_head_json[0].yoast_head_json.title
   const descriptionOG = yoast_head_json[0].yoast_head_json.og_description
-  const descriptionOGLinkReplaced = descriptionOG.replace('Learn more', '')
-  const descriptionOGClean = descriptionOGLinkReplaced.replace(
-    /((http:|https:)[^\s]+[\w])/g,
-    '<a href="$1" target="_blank">Learn more</a>'
-  )
+  const descriptionOGLinkReplaced = descriptionOG
+    .replace('Learn more', '')
+    .replace('[&hellip;]', '')
 
   return (
     <>
@@ -25,18 +25,9 @@ export default function Home({ dir, yoast_head_json }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Layout>
-        <main dir={dir} className={styles.main}>
-          <h1 className="text-3xl font-bold underline bg-orange-500">
-            {yoast_head_json[0].yoast_head_json.title}
-          </h1>
-          {/* <p className={styles.description}>{descriptionOGCleanHTML}</p> */}
-          <div>
-            <p dangerouslySetInnerHTML={{ __html: descriptionOGClean }}></p>
-          </div>
-        </main>
-        <p className="bg-white">{yoast_head_json.title}</p>
-        {console.log(yoast_head_json[0].yoast_head_json)}
+      <Layout locale={locale}>
+        <Body title={titleOG} description={descriptionOGLinkReplaced} />
+        <main dir={dir} className={styles.main}></main>
       </Layout>
     </>
   )

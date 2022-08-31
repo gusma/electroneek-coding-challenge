@@ -19,12 +19,318 @@ a {
   box-sizing: border-box;
 }
 
+.body-first-identifier {
+  box-sizing: border-box;
+  display: block;
+  overflow: hidden;
+  width: initial;
+  height: initial;
+  background: none;
+  opacity: 1;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+.partners-first-identifier {
+  box-sizing: border-box;
+  display: inline-block;
+  overflow: hidden;
+  width: initial;
+  height: initial;
+  background: none;
+  opacity: 1;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  max-width: 100%;
+}
+.partners-second-identifier {
+  box-sizing: border-box;
+  display: block;
+  width: initial;
+  height: initial;
+  background: none;
+  opacity: 1;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+}
+
+.mainNav {
+  position: sticky;
+  top: 0;
+  /* Fix your navbar by using above two lines of code */
+  z-index: 10;
+
+  @media screen and (max-width: 960px) {
+    transition: 0.8s all ease;
+  }
+}
+
+.navbar {
+  background-color: transparent;
+  @apply md:bg-none py-2 fixed w-full top-0 z-50 transition
+        delay-100;
+}
+
+.deep-blue {
+  background-color: #151b30;
+}
+.navbar-active {
+  background-color: #151b30;
+  @apply py-2 fixed w-full top-0 z-50 transition
+        delay-100;
+}
+
+.telephoneNumber {
+  @apply flex items-center justify-center py-2 shadow-sm text-sm font-medium text-white;
+}
+
+.box1,
+.box2,
+.box3 {
+  box-sizing: border-box;
+  display: block;
+  overflow: hidden;
+  width: initial;
+  height: initial;
+  background: none;
+  opacity: 1;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.card-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  box-sizing: border-box;
+  padding: 0;
+  border: none;
+  margin: auto;
+  display: block;
+  width: 0;
+  height: 0;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+a.arrow-blue:hover .arrow-cards {
+  fill: #6949c8;
+}
+a.arrow-green:hover .arrow-cards {
+  fill: #00aa5d;
+}
+a.arrow-orange:hover .arrow-cards {
+  fill: #e09e3e;
+}
+
+@media screen and (max-width: 767px) {
+  .indexCounters_line__DDA_D {
+    transform: translateY(1129px);
+  }
+  .indexCounters_container__4xV6u {
+    margin-top: -80rem;
+  }
+}
+
+@-webkit-keyframes react-loading-skeleton {
+  to {
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+}
+@keyframes react-loading-skeleton {
+  to {
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+}
+.react-loading-skeleton {
+  --base-color: #ebebeb;
+  --highlight-color: #f5f5f5;
+  --animation-duration: 1.5s;
+  --animation-direction: normal;
+  --pseudo-element-display: block;
+  background-color: var(--base-color);
+  border-radius: 0.25rem;
+  display: inline-flex;
+  line-height: 1;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
+.react-loading-skeleton:after {
+  -webkit-animation-direction: var(--animation-direction);
+  animation-direction: var(--animation-direction);
+  -webkit-animation-duration: var(--animation-duration);
+  animation-duration: var(--animation-duration);
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: react-loading-skeleton;
+  animation-name: react-loading-skeleton;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  background-image: linear-gradient(
+    90deg,
+    var(--base-color),
+    var(--highlight-color),
+    var(--base-color)
+  );
+  background-repeat: no-repeat;
+  content: ' ';
+  display: var(--pseudo-element-display);
+  height: 100%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+}
+
+/* Header */
+
+.headerWrapper {
+  @apply md:bg-none py-2 fixed w-full top-0 z-50 transition delay-100;
+}
+
+.headerContainer {
+  @apply max-w-7xl mx-auto py-6 px-8 lg:px-8 relative z-50 transition delay-300 duration-500 ease-in-out transform scale-100 py-6;
+}
+
+/* Dropdown component */
+
+.dropdownContainer {
+  @apply text-xs order-2 flex-shrink-0 sm:order-3 sm:ml-3 xl:ml-0;
+}
+
+.menuButtonOption {
+  @apply inline-flex order-2 w-full justify-center rounded-md bg-inherit bg-opacity-20 px-4 py-2 text-xs font-medium text-gray-300 hover:bg-opacity-30 focus:outline-none focus-visible:ring-2 flex-shrink-0 sm:order-3 sm:ml-3 xl:ml-0;
+}
+.menuOptionContainer {
+  @apply absolute right-0 mt-2 w-auto origin-top-right deep-blue shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none text-white;
+}
+.flagClass {
+  @apply flex w-full items-center rounded-md px-2 py-2 text-sm;
+}
+.chevronDownIcon {
+  @apply ml-2 -mr-1 h-5 w-5 text-violet-200 hover:text-violet-100;
+}
+
+/* Main Component */
+
+.mainComponentContainer {
+  @apply z-0 relative bg-cover h-full mt-0 mb-96 md:mb-0 pb-96 md:pb-44 lg:pb-0 lg:mb-0;
+}
+
+.mainImgContainer {
+  box-sizing: border-box;
+  display: block;
+  overflow: hidden;
+  width: initial;
+  height: initial;
+  background: rgba(0, 0, 0, 0) none repeat scroll 0% 0%;
+  opacity: 1;
+  border: 0px none;
+  margin: 0px;
+  padding: 0px;
+  position: absolute;
+  inset: 0px;
+}
+
+.mainImg {
+  position: absolute;
+  inset: 0px;
+  box-sizing: border-box;
+  padding: 0px;
+  border: medium none;
+  margin: auto;
+  display: block;
+  width: 0px;
+  height: 0px;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+.titleSection {
+  @apply relative pt-20 pb-6 lg:pt-20 lg:pb-0;
+}
+.titleContainer {
+  @apply z-30 grid gap-0 md:gap-6 text-left z-30 lg:pb-64 md:pb-20 pt-4 md:pt-10 pb-32;
+}
+
+.titleWrapper {
+  @apply grid-cols-12 grid;
+}
+
+.titleContainer h1 {
+  @apply lg:text-5xl text-3xl pr-4 lg:pr-36 font-extrabold text-white pt-5 pb-10;
+}
+.descriptionText {
+  @apply text-white text-base font-medium md:leading-7 pb-6 md:pb-10 pr-0 lg:pr-0 lg:max-w-xl;
+}
+
+.cardContainer {
+  @apply z-10 md:pt-28 pt-0 lg:pt-0 max-w-7xl mx-auto px-6 md:px-8 overflow-visible indexCounters_container;
+}
+
+.cardContainer_Wrapper {
+  @apply md:gap-x-8 md:gap-y-10 gap-5 grid auto-rows-auto md:pb-10 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 indexCounters_line;
+}
+.indexCounters_line {
+  transform: translateY(164px);
+}
+.indexCounters_container {
+  margin-top: -20rem;
+}
+
+.postBody {
+  background-image: url('../assets/img/bg-image.svg');
+  background-color: white;
+  background-size: contain;
+  min-height: 100%;
+  min-width: 100%;
+  max-height: 100vh;
+  background-position: 64% 56%;
+  height: 835px;
+  @apply bg-contain lg:bg-cover bg-bottom lg:bg-bottom lg:pb-20 bg-no-repeat h-full pt-10 lg:pt-2;
+}
+.call-to-action {
+  @apply flex text-center items-start flex-col md:flex-row justify-start md:mt-4 md:mb-0 mb-6 max-w-sm md:max-w-full;
+}
+
+.call-to-action a {
+  @apply cursor-pointer flex flex-nowrap items-center justify-center text-base uppercase font-bold rounded text-white bg-green-500 hover:text-green-500 hover:bg-blue-900 border border-green-500 mr-10  px-8 py-3 md:py-6 md:px-14 sm:px-8 focus:outline-none;
+}
+
+.call-to-action a:hover {
+  @apply bg-slate-900;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
   }
 }
