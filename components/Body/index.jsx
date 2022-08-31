@@ -33,7 +33,7 @@ const Body = props => {
   return (
     <>
       <div className="mainComponentContainer">
-        <span class="mainImgContainer">
+        <span className="mainImgContainer">
           <Image
             sizes="100vw"
             src={bgImage}
@@ -42,7 +42,7 @@ const Body = props => {
             className="mainImg"
           />
         </span>
-        <section className="titleSection">
+        <section className="relative pt-20 pb-6 lg:pt-20 lg:pb-0 ">
           <div className="max-w-7xl mx-auto px-6 md:px-8 ">
             <div className="titleWrapper">
               <div className="col-span-12 lg:col-span-9 ">
@@ -61,8 +61,8 @@ const Body = props => {
             </div>
           </div>
         </section>
-        <div className="cardContainer">
-          <div className="cardContainer_Wrapper">
+        <div className="z-10 md:pt-28 pt-0 lg:pt-0 max-w-7xl mx-auto px-6 md:px-8 overflow-visible indexCounters_container">
+          <div className="md:gap-x-8 md:gap-y-10 gap-5 grid auto-rows-auto md:pb-10 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 indexCounters_line">
             <Card
               imgSrc={posti}
               alt="Start and grow your RPA service business"
