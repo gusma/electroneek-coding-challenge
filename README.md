@@ -20,6 +20,8 @@ You’ll need to create a Next.js page with a layout of a page section shown in 
 * 3 cards can be made static for this task or dynamic as described in task #2 variant B
 * You can skip logos located next to the button
 
+> Feedback - What this code challenge needed to make it.
+> The fetch function needs validation for missing or failing data sources.
 
 ### Fetch data from the API
 Pick one of the variants below: 
