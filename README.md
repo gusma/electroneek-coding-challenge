@@ -14,14 +14,17 @@ Below you fill find several test tasks of various difficulty. The common conditi
 * All images should be added with Next.js’s Image component
 * There are 4 tasks in total. Task #2 has 2 variants - pick only one. That will make for 1 static and 1 dynamic block (more details in tasks #1 and 2)
 Take your time, but don’t waste too much time. Also, please add an amount of time it took to finish the tasks to your email. 
+
+## Feeback for handed-in product
+
+> Feedback - What this code challenge needed to make it:
+> The fetch function needs validation for missing or failing data sources.
+
 ## Layout of a page section. 
 You’ll need to create a Next.js page with a layout of a page section shown in a red border on a screenshot below. 
 * H1 heading, subheading, paragraph of text and button are hard-coded string values or can be taken from the API as described in task #2 variant A
 * 3 cards can be made static for this task or dynamic as described in task #2 variant B
 * You can skip logos located next to the button
-
-> Feedback - What this code challenge needed to make it.
-> The fetch function needs validation for missing or failing data sources.
 
 ### Fetch data from the API
 Pick one of the variants below: 
